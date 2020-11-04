@@ -1205,6 +1205,9 @@ h4 {
   right: 2px;
   background-size: 100%;
 }
+.status {
+  text-align: center;
+}
 .popup-design .form {
   margin: 0;
   padding-top: 0;
