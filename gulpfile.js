@@ -4,8 +4,8 @@ const gulp = require("gulp");
 const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
 
-// const dist = "./dist/"; 
-const dist = "D:/xampp/htdocs/js-project";
+const dist = "./dist/"; 
+// const dist = "D:/xampp/htdocs/js-project";
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
@@ -53,8 +53,8 @@ gulp.task("copy-assets", () => {
 
 gulp.task("watch", () => {
     browsersync.init({
-      proxy: 'localhost/js-project',
-		// server: "./dist/",
+      // proxy: 'localhost/js-project',
+		server: "./dist/",
 		port: 4000,
 		notify: true
     });
